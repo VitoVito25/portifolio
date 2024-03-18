@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 :root {
 
     --cor1: #7E10F5;
@@ -5,7 +7,10 @@
     --cor3: #6F40A0; 
     --cor4: #5B4375; 
     --cor5: #302E33; 
+    --white: #ffffff;
+    --gray: #d9d9d9;
+    --black: #000000;
 
-    --fonte-principal: 'Arial', sans-serif; 
-    --fonte-secundaria: 'Georgia', serif; 
+    --primary-font: 'DM Sans', sans-serif; 
+    --secundary-font: 'Georgia', serif; 
   }
