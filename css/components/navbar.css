@@ -1,0 +1,86 @@
+
+/* Gerais */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo-victor{
+    width: 180px;
+}
+
+.navbar .navbar-content {
+    padding: 2rem 4rem 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-content .navbar-links li {
+    display: inline-block;
+}
+
+.navbar .navbar-content .navbar-links li:not(:last-of-type) {
+    margin-right: 2rem;
+}
+
+.navbar .navbar-content .navbar-links a {
+    text-decoration: none;
+    color: var(--cor5);
+    padding: 1rem;
+    display: inline-block;
+}
+
+.navbar .navbar-content .navbar-links a:hover {
+    color: var(--cor2);
+}
+
+/* Tira a navbar de celular*/
+@media only screen and (min-width:800px) {
+        .navbar .navbar-content .navbar-mobile,
+        .navbar .navbar-content .navbar-mobile .mobile-links {
+        display: none;
+    }
+}   
+
+/* Responsividade */
+@media only screen and (max-width:800px) {
+    .logo-victor {
+        width: 80%;
+    }
+  
+    .navbar .navbar-content .navbar-links {
+        display: none;
+    }
+  
+    .navbar .navbar-content .navbar-mobile {
+        display: flex;
+        align-items: center;
+    }
+  
+    .navbar .navbar-content .mobile-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; 
+    }
+  
+    .navbar .navbar-content .mobile-links li {
+        list-style-type: none;
+        
+    }
+  
+    .navbar .navbar-content .mobile-links a {
+        text-decoration: none;
+        color: var(--cor5);
+        padding: 1rem;
+        display: inline-block;
+    }
+
+    .navbar .navbar-content .mobile-links a:hover {
+        color: var(--cor2);
+    }
+}

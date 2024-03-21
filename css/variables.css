@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 :root {
+  
+  /*  Cores  */
   --cor1: #7E10F5;
   --cor2: #7B30CA;
   --cor3: #6F40A0;
   --cor4: #5B4375;
   --cor5: #302E33;
   --white: #ffffff;
-  --gray: #d9d9d9;
+  --gray: #f5f5f5e8;
   --black: #000000;
 
-  --primary-font: Arial, sans-serif;
+  /*  Fontes  */
+  --primary-font: 'DM Sans', sans-serif;
   --secondary-font: 'Georgia', serif;
 }
+
