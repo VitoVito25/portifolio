@@ -9,8 +9,10 @@
 
 </head>
 <body>
+
+    <!-- Nav Bar -->
     <nav class="navbar">
-        <div class="navbar-content">
+        <div class="navbar-content max-width mb-0">
             <a href="/">
                 <img src="images/logo" alt="Victor Renaud" class="logo-victor">
             </a>
@@ -22,6 +24,7 @@
                 <li><a href="#footer">Contato</a></li>
             </ul>
             <div class="navbar-mobile">
+                <img src="images/menu.svg" alt="menu" class="burguer">
                 <ul class="mobile-links">
                     <li><a href="#header">Início</a></li>
                     <li><a href="#about">Sobre</a></li>
@@ -33,7 +36,8 @@
         </div>
     </nav>
 
-    <header>
+    <!-- Header -->
+    <header id="header" class="max-width">
         <div class="header-left">
             <h1>Olá! Sou Victor Renaud</h1>
             <p>
@@ -48,14 +52,160 @@
             </div>
           </div>   
     </header>
-    <section>
 
+    <!-- About -->
+    <section id="about" class="about max-width">
+        <div class="about-left">
+          <h2 class="secondary-title">Além do código: quem sou eu?</h2>
+          <p>
+            Que tal me seguir nas redes sociais listadas abaixo para ficar por dentro do meu trabalho?
+            </p>
+          <ul>
+            <li><a href="https://www.instagram.com/_thiyudi/" target="_blank"><img src="images/instagram.svg"
+                  alt="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/thiago-yudi/" target="_blank"><img src="images/linkedin.svg"
+                  alt="Linkedin"></a></li>
+            <li><a href="https://github.com/thiagoyamada" target="_blank"><img src="images/icons8-github (1).svg"
+                  alt="GitHub"></a></li>
+          </ul>
+        </div>
+        <div class="about-right">
+          <h3 class="tertiary-title mb-m">Desenvolvedor front-end apaixonado por programação e tecnologia</h3>
+          <p>
+            Olá, eu sou Thiago Yudi Yamada, um desenvolvedor front-end apaixonado por
+            programação e tecnologia. Com mais de 1 ano de experiência em
+            desenvolvimento web, tenho trabalhado com diversas tecnologias e
+            plataformas para criar soluções essenciais que atendam às
+            necessidades dos clientes.
+          </p>
+          <p>
+            Eu adoro o desafio de encontrar soluções inovadoras e criativas para
+            problemas complexos e estou sempre buscando novos aprendizados para crescer profissionalmente.
+          </p>
+        </div>
     </section>
-    <section>
 
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="skills-content max-width">
+          <h2 class="tertiary-title">Minha caixinha de ferramentas</h2>
+          <p class="description"> Aqui estão as minhas habilidades e ferramentas que domino e que me permitem criar soluções
+            criativas e funcionais para meus clientes.
+          </p>
+          <ul>
+            <li class="skills-item">
+              <div class="image-container">
+                <img src="images/html5 (1).svg" alt="html logo" class="image-logo">
+              </div>
+              <h3>Html</h3>
+              <p>Uma linguagem de marcação utilizada na construção e estruturação de páginas web.</p>
+            </li>
+            <li class="skills-item">
+              <div class="image-container">
+                <img src="images/css3-alt.svg" alt="Css logo" class="image-logo">
+              </div>
+              <h3>Css</h3>
+              <p>Uma linguagem de estilo utilizada para formatar e estilizar documentos HTML.</p>
+            </li>
+            <li class="skills-item">
+              <div class="image-container">
+                <img src="images/js.svg" alt="Javascript logo" class="image-logo">
+              </div>
+              <h3>Javascript</h3>
+              <p>Uma linguagem de programação utilizada para tornar as páginas web interativas e dinâmicas</p>
+            </li>
+            <li class="skills-item">
+              <div class="image-container">
+                <img src="assets/github.svg" alt="Github logo" class="image-logo">
+              </div>
+              <h3>GitHub</h3>
+              <p>Uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.</p>
+            </li>
+          </ul>
+        </div>
     </section>
-    <footer>
-        
+
+    <!-- Projects-->
+    <section class="projects max-width" id="projects">
+        <div class="projects-content">
+          <h2 class="secondary-title">Projetos em destaque</h2>
+          <p>
+            De conceitos iniciais a realizações concretas, aqui estão alguns dos meus projetos mais recentes que se
+            destacaram.
+          </p>
+        </div>
+        <ul>
+          <li>
+            <div class="image">
+              <img src="images/landing-page.png" alt="Gerenciamento de tarefas">
+            </div>
+            <div class="projects-info">
+              <h3 class="tertiary-title">Landing pages</h3>
+              <p>
+                Layouts de páginas com a finalidade de converter visitantes em clientes. São páginas simples mas com o
+                direcionamento certo para capturar a atenção e conduzir os visitantes a uma ação específica. Produzido com
+                Html, Css e Javascript.
+              </p>
+              <a href="https://thiagoyamada.github.io/spider/#" target="_blank">Leia mais &rarr;</a>
+            </div>
+          </li>
+          <li class="projects-reversed-list">
+            <div class="image">
+              <img src="images/cep.png" alt="ecommerce">
+            </div>
+            <div class="projects-info">
+              <h3 class="tertiary-title">Buscador de CEP</h3>
+              <p>
+                Sistema web desenvolvido com React e uma Api, com funcionalidades de fornecer informações exatas para o
+                usuário, como, endereço,
+                bairro, cidade e estado ao digitar o CEP.
+              </p>
+              <a href="https://thiagoyamada.github.io/buscador-cep/" target="_blank">Leia mais &rarr;</a>
+            </div>
+          </li>
+          <li>
+            <div class="image">
+              <img src="images/financas.png" alt="delivery">
+            </div>
+            <div class="projects-info">
+              <h3 class="tertiary-title">App de finanças</h3>
+              <p>
+                Software elaborado com base em ReactJs, com finalidade de tornar a vida financeira mais fácil. Ao informar
+                os dados pedidos, o usuário obtém os valores totais de gastos e ganhos, e o saldo se é positivo ou negativo.
+              </p>
+              <a href="https://thiagoyamada.github.io/controle-financeiro-reactjs/" target="_blank">Leia mais &rarr;</a>
+            </div>
+          </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content max-width mb-0">
+          <h2 class="tertiary-title mb-s">Bora codar?</h2>
+          <p class="mb-m">
+            Ficarei feliz em saber mais sobre seus projetos e como podemos
+            trabalhar juntos para torná-los realidade. </p>
+          <div class="footer-contact mb-m">
+            <span class="mb-m">victor.tomazonir@gmail.com</span>
+            <span> +55 (41) 997840798</span>
+          </div>
+          <ul class="mb-l">
+            <li><a href="https://www.instagram.com/_thiyudi/" target="_blank"><img src="images/instagram.svg"
+                  alt="Instagram"></a></li>
+            <li><a href=" https://www.linkedin.com/in/thiago-yudi/" target="_blank"><img src=" images/linkedin.svg"
+                  alt="Linkedin"></a></li>
+            <li><a href="https://github.com/thiagoyamada" target="_blank"><img src="images/icons8-github (1).svg"
+                  alt="GitHub"></a></li>
+          </ul>
+          <p class="footer-copyright">
+            © 2024 Victor Renaud. Todos os direitos reservados.
+          </p>
+        </div>
     </footer>
+
+    <!-- Puxando Script -->
+    <script src="scripts/index.js"></script>
+
 </body>
 </html>

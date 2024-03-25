@@ -6,6 +6,7 @@
     left: 0;
     width: 100%;
     z-index: 10;
+    background-color: var(--gray);
 }
 
 .logo-victor{
@@ -13,7 +14,7 @@
 }
 
 .navbar .navbar-content {
-    padding: 2rem 4rem 1rem 4rem;
+    padding: 3rem 4rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,49 +39,58 @@
     color: var(--cor2);
 }
 
+.navbar .active {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
 /* Tira a navbar de celular*/
-@media only screen and (min-width:800px) {
-        .navbar .navbar-content .navbar-mobile,
-        .navbar .navbar-content .navbar-mobile .mobile-links {
-        display: none;
-    }
-}   
+.navbar .navbar-content .navbar-mobile,
+.navbar .navbar-content .navbar-mobile .mobile-links {
+  display: none;
+}
 
 /* Responsividade */
 @media only screen and (max-width:800px) {
+
     .logo-victor {
-        width: 80%;
+      width: 80%;
     }
   
     .navbar .navbar-content .navbar-links {
-        display: none;
+      display: none;
     }
   
     .navbar .navbar-content .navbar-mobile {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
     }
   
-    .navbar .navbar-content .mobile-links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%; 
+    .navbar .navbar-content .navbar-mobile img{
+      width: 3.6rem;
+      height: 3.6rem;
+      cursor: pointer;
     }
   
-    .navbar .navbar-content .mobile-links li {
-        list-style-type: none;
-        
+    .navbar .navbar-content .navbar-mobile.active .mobile-links {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--gray);
+      width: 100%;
+      position: absolute;
+      top: 98%;
+      left: 0;
+      padding: 1rem 0;
+      box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
+      z-index: 1;
     }
   
-    .navbar .navbar-content .mobile-links a {
-        text-decoration: none;
-        color: var(--cor5);
-        padding: 1rem;
-        display: inline-block;
+    .navbar .navbar-content .navbar-mobile.active .mobile-links li {
+      margin-right: 0;
     }
-
-    .navbar .navbar-content .mobile-links a:hover {
-        color: var(--cor2);
+  
+    .navbar .navbar-content .navbar-mobile.active .mobile-links li a {
+      padding: 1rem;
+      display: block;
+      text-align: center;
     }
-}
+  }
