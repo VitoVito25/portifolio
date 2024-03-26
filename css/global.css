@@ -8,6 +8,10 @@
     font-family: var(--primary-font);
 }
 
+strong {
+  color: var(--cor2);
+}
+
 html {
     font-size: 62.5%;
   }
@@ -71,6 +75,10 @@ p:not(:last-of-type),
   color: var(--white);
   font-weight: 400;
   font-size: 1.4rem;
+}
+
+.btn.btn-about:hover {
+  background-color: var(--cor1);
 }
 
 .max-width {

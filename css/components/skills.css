@@ -19,6 +19,15 @@
   gap: 2rem;
 }
 
+.skills .skills-content ul .skill-title {
+  color: var(--cor2);
+  font-weight: bold;
+}
+
+.skills .skills-content ul .strong-skill {
+  color: var(--cor4);
+}
+
 .skills .skills-content ul li .image-container {
   background-color: var(--white);
   padding: 2rem;
