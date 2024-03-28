@@ -1,97 +1,106 @@
 
 /* Gerais */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    background-color: var(--gray);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
 }
 
-.navbar .active {
-  background-color: black;
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+.navbar.active {
+box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+background-color: var(--gray);
 }
 
 .logo-victor{
-    width: 180px;
+  height: 35px;
+  width: 100%;
 }
 
 .navbar .navbar-content {
-    padding: 3rem 4rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 3rem 4rem 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .navbar .navbar-content .navbar-links li {
-    display: inline-block;
+  display: inline-block;
+}
+
+.navbar .navbar-content .navbar-links li:first-of-type {
+  margin-left: 6rem;
 }
 
 .navbar .navbar-content .navbar-links li:not(:last-of-type) {
-    margin-right: 2rem;
+  margin-right: 0.5rem;
 }
 
 .navbar .navbar-content .navbar-links a {
-    text-decoration: none;
-    color: var(--cor5);
-    padding: 1rem;
-    display: inline-block;
+  text-decoration: none;
+  color: var(--cor5);
+  padding: 1rem;
+  display: inline-block;
 }
 
 .navbar .navbar-content .navbar-links a:hover {
-    color: var(--cor2);
+  color: var(--cor2);
 }
 
 /* Tira a navbar de celular*/
 .navbar .navbar-content .navbar-mobile,
 .navbar .navbar-content .navbar-mobile .mobile-links {
-  display: none;
+display: none;
 }
 
 /* Responsividade */
 @media only screen and (max-width:800px) {
 
-    .logo-victor {
-      width: 80%;
-    }
-  
-    .navbar .navbar-content .navbar-links {
-      display: none;
-    }
-  
-    .navbar .navbar-content .navbar-mobile {
-      display: flex;
-      align-items: center;
-    }
-  
-    .navbar .navbar-content .navbar-mobile img{
-      width: 3.6rem;
-      height: 3.6rem;
-      cursor: pointer;
-    }
-  
-    .navbar .navbar-content .navbar-mobile.active .mobile-links {
-      display: flex;
-      flex-direction: column;
-      background-color: var(--gray);
-      width: 100%;
-      position: absolute;
-      top: 98%;
-      left: 0;
-      padding: 1rem 0;
-      box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
-      z-index: 1;
-    }
-  
-    .navbar .navbar-content .navbar-mobile.active .mobile-links li {
-      margin-right: 0;
-    }
-  
-    .navbar .navbar-content .navbar-mobile.active .mobile-links li a {
-      padding: 1rem;
-      display: block;
-      text-align: center;
-    }
+  .logo-victor {
+    width: 100%;
   }
+
+  .navbar .navbar-content {
+    justify-content: space-between;
+  }
+
+  .navbar .navbar-content .navbar-links {
+    display: none;
+  }
+
+  .navbar .navbar-content .navbar-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .navbar-content .navbar-mobile img{
+    width: 3.6rem;
+    height: 3.6rem;
+    cursor: pointer;
+  }
+
+  .navbar .navbar-content .navbar-mobile.active .mobile-links {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    width: 100%;
+    position: absolute;
+    top: 98%;
+    left: 0;
+    padding: 1rem 0;
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .navbar .navbar-content .navbar-mobile.active .mobile-links li {
+    margin-right: 0;
+  }
+
+  .navbar .navbar-content .navbar-mobile.active .mobile-links li a {
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    font-weight: 200;
+  }
+}
