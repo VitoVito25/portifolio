@@ -51,14 +51,24 @@ background-color: var(--gray);
 /* Tira a navbar de celular*/
 .navbar .navbar-content .navbar-mobile,
 .navbar .navbar-content .navbar-mobile .mobile-links {
-display: none;
+  display: none;
+}
+
+@media only screen and (min-width:800px){
+  .navbar .navbar-content .logo-victor-mobile {
+    display: none;
+  }
 }
 
 /* Responsividade */
 @media only screen and (max-width:800px) {
 
   .logo-victor {
-    width: 100%;
+    display: none;
+  }
+
+  .logo-victor-mobile {
+    height: 40px;
   }
 
   .navbar .navbar-content {

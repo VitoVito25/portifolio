@@ -66,16 +66,16 @@ header .header-left p {
   border: 2px solid var(--cor3);
 }
 
-header .header-left ul {
-  transform: translateY(65px);
-  margin-left: -1.2rem;
+header .header-left .social-media {
+  transform: translateY(100px);
+  margin-left: -0.5rem;
 }
 
-header .header-left ul li {
+header .header-left .social-media li {
   display: inline-block;
 }
 
-header .header-left ul li a {
+header .header-left .social-media li a {
   display: inline-block;
   padding: 1rem;
 }
