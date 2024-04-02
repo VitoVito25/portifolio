@@ -1,0 +1,30 @@
+.background-image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: top right; 
+    background-size: cover;
+    height: 100vh;
+    transform: translateY(-130px);
+}
+
+.profile-background {
+    width: 52vw;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .background-image-container {
+        height: auto;
+        transform: none;
+        background-size: cover;
+      }
+    
+      .profile-background {
+        width: 100%;
+        max-width: none;
+        height: 100vh;
+      }
+}

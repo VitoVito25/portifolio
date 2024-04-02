@@ -30,7 +30,7 @@ background-color: var(--gray);
 }
 
 .navbar .navbar-content .navbar-links li:first-of-type {
-  margin-left: 6rem;
+  margin-left: 4rem;
 }
 
 .navbar .navbar-content .navbar-links li:not(:last-of-type) {
