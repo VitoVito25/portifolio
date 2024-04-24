@@ -1,33 +1,12 @@
 .about {
     display: flex;
-    justify-content: space-between;
-    gap: 4rem;
+    justify-content: center; 
+    align-items: center; 
     scroll-margin-top: 20rem;
 }
 
-.about .about-left {
-    max-width: 40rem;
-    flex: 1;
-}
-
-.about .about-left p {
-    margin: 1rem 0 2rem;
-}
-
-.about .about-left ul {
-    margin-left: -1rem;
-}
-
-.about .about-left ul li {
-    display: inline-block;
-}
-
-.about .about-left ul li a {
-    display: inline-block;
-    padding: 1rem;
-}
-
-.about .about-right { 
+.about .about-text { 
+    text-align: center;
     flex: 1;
     max-width: 66rem;
 }
@@ -38,12 +17,9 @@
     align-items: center;
 }
 
-.about .about-right {
+.about .about-text {
     max-width: 66rem;
     text-align: center;
 }
 
-.about .about-right {
-    text-align: center;
-}
 }
